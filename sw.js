@@ -1,4 +1,4 @@
-const CACHE = "invoaudit-v1";
+const CACHE = "invoaudit-v2";
 const ASSETS = ["/", "/index.html", "/manifest.json"];
 
 self.addEventListener("install", event => {
@@ -20,5 +20,8 @@ self.addEventListener("fetch", event => {
     event.respondWith(fetch(event.request));
     return;
   }
-  event.respondWith(caches.match(event.request).then(cached => cached || fetch(event.request)));
+
+  event.respondWith(
+    caches.match(event.request).then(cached => cached || fetch(event.request))
+  );
 });
