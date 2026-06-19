@@ -3,8 +3,17 @@
   "short_name": "InvoAudit",
   "description": "Автономен AI инспектор за фактури",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#06080A",
   "theme_color": "#00E676",
-  "icons": []
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }
