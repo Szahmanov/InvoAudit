@@ -1,0 +1,10 @@
+{
+  "name": "InvoAudit AI",
+  "short_name": "InvoAudit",
+  "description": "Автономен AI инспектор за фактури",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06080A",
+  "theme_color": "#00E676",
+  "icons": []
+}
